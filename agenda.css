@@ -1,0 +1,270 @@
+/*//// Calendar //// */
+
+
+.month {
+    padding: 70px 25px;
+    width:auto;
+    background: #603a24;
+    text-align: center;
+    color: #e1e1e1;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .calendarweek,
+  .calendarheader {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  
+  }
+  .calendarweek {
+    grid-auto-rows: 100px;
+    text-align: right;
+  }
+  
+  .calendarheader {
+    grid-auto-rows: 50px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .calendarday {
+    padding: 16px;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: #1c272e;
+  }
+  
+  main {
+    background-color: #FCFBFC;
+  }
+  
+  .calendar {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+  }
+  
+  .calendarheader > div {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  
+  .calendarday {
+    border-right: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+  }
+  
+  .calendarday:last-child {
+    border-right: 0;
+  }
+
+
+.box1 {
+  width: 8.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: orange;
+  position: absolute;
+  top: 41%;
+  left: 57%;
+  border-radius: 25px;
+}
+
+.box2 {
+  width: 8.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: slateblue;
+  position: absolute;
+  top: 41%;
+  left: 85%;
+  border-radius: 25px;
+}
+
+.box3 {
+  width: 22.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: orangered;
+  position: absolute;
+  top: 53.5%;
+  left: 29%;
+  border-radius: 25px;
+}
+
+.box4 {
+  width: 8.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: slateblue;
+  position: absolute;
+  top: 53.5%;
+  left: 85%;
+  border-radius: 25px;
+}
+
+/*/// Deleted box5 ///*/
+
+.box6 {
+  width: 36.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: orange;
+  position: absolute;
+  top: 66%;
+  left: 1.4%;
+  border-radius: 25px;
+}
+
+.box7 {
+  width: 8.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: orange;
+  position: absolute;
+  top: 66%;
+  left: 57%;
+  border-radius: 25px;
+}
+
+.box8 {
+  width: 8.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: slateblue;
+  position: absolute;
+  top: 66%;
+  left: 71%;
+  border-radius: 25px;
+}
+
+.box9 {
+  width: 36.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: orangered;
+  position: absolute;
+  top: 79%;
+  left: 15%;
+  border-radius: 25px;
+}
+
+.box10 {
+  width: 8.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: slateblue;
+  position: absolute;
+  top: 79%;
+  left: 71%;
+  border-radius: 25px;
+}
+
+.box11 {
+  width: 36.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: orange;
+  position: absolute;
+  top: 91.5%;
+  left: 15%;
+  border-radius: 25px;
+}
+
+.box12 {
+  width: 22.5%;
+  height: 3%;
+  padding: 20px;
+  border: 8px ;
+  background: slateblue;
+  position: absolute;
+  top: 91.5%;
+  left: 71%;
+  border-radius: 25px;
+}
+
+
+/*//// Form //// */
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  text-transform: uppercase;
+}
+
+.event {
+  color: #e1e1e1;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  text-transform: uppercase;
+
+}
+
+input[type=submit] {
+  background-color: #603a24;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  text-transform: uppercase;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #603a24;
+  padding: 20px;
+}
+
+.col25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.col25bis {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col25, .col75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+}
